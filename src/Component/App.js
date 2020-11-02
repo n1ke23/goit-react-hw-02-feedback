@@ -7,17 +7,18 @@ const state = {
 };
 
 function App() {
- 
-  const [states, setState] = useState(state);
+
+  const [states, setStates] = useState(state);
   // console.log(states);
-  // const addCount () => {}
-
-
+  const addStep = (id) => {
+    console.log(id);
+    return setStates((el) => ({ ...el, [id]: el.[id] + 1 }))
+  }
   return (
     <>
       <h1>Please leave feedback</h1>
       <div>
-        {Object.entries(states).map((el)=> <Buttons />)}
+        {Object.keys(states).map((el) => <Buttons key={el} id={el} addStep={addStep} />)}
       </div>
       <h2>Statistick</h2>
       <p>good: {state.good}</p>

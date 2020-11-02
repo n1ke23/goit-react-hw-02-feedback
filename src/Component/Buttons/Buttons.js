@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Buttons = () => {
+const Buttons = ({ id, addStep }) => {
   return (
-  <buttons></buttons>
+    <button className='button' id={id} onClick={() => addStep(id)}>{id}</button>
   );
 };
 
