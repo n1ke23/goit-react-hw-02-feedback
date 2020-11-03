@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
 const Buttons = ({ id, addStep }) => {
   return (
@@ -7,3 +8,8 @@ const Buttons = ({ id, addStep }) => {
 };
 
 export default Buttons;
+
+// Buttons.PropTypes = {
+//   id: PropTypes.string.isRequired,
+//   addStep: PropTypes.func.isRequired,
+// }
