@@ -10,7 +10,7 @@ const Statistick = ({name, value}) => {
 };
 
 export default Statistick;
-// Statistick.PropTypes = {
-//   name: PropTypes.string.isRequired,
-//   value: PropTypes.number.isRequired,
-// }
+Statistick.propTypes = {
+  name: PropTypes.string.isRequired,
+  value: PropTypes.number.isRequired,
+}

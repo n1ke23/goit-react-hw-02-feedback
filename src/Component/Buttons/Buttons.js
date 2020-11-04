@@ -9,7 +9,7 @@ const Buttons = ({ id, addStep }) => {
 
 export default Buttons;
 
-// Buttons.PropTypes = {
-//   id: PropTypes.string.isRequired,
-//   addStep: PropTypes.func.isRequired,
-// }
+Buttons.propTypes = {
+  id: PropTypes.string.isRequired,
+  addStep: PropTypes.func.isRequired,
+}
