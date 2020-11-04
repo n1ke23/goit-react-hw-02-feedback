@@ -24,7 +24,7 @@ function App() {
           {Object.keys(states).map((el) => <Buttons key={el} id={el} addStep={addStep} />)}
       </Section>
       { countTotalFeedback() > 0 
-        ? (<Section titel={"Statistick"}>{Object.entries(states).map((el)=> <Statistick key={el[0]} name={el[0]} value={el[1]}/> )}<p>total: {countTotalFeedback()}</p><p>Positive feedback: {countPositiveFeedbackPercentage()}%</p></Section>) 
+        ? (<Section title={"Statistick"}>{Object.entries(states).map((el)=> <Statistick key={el[0]} name={el[0]} value={el[1]}/> )}<p>total: {countTotalFeedback()}</p><p>Positive feedback: {countPositiveFeedbackPercentage()}%</p></Section>) 
         : (<Notification message="No feedback given" />)
       }
     </>
